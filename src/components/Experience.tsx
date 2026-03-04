@@ -48,7 +48,7 @@ const experiences = [
     date: 'Janvier 2026 - Février 2026',
     description: (
       <>
-        Participation au développement du portail web <a href="https://paleo.esrf.fr" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">Paleo</a>. Travail sur l’intégration et l’amélioration d’un viewer 3D ainsi que sur différentes fonctionnalités du site en utilisant des technologies web modernes. Collaboration dans un environnement de projet réel.
+        Stage de 6 semaines en entreprise. Participation au développement du portail web <a href="https://paleo.esrf.fr" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">Paleo</a>. Travail sur l’intégration et l’amélioration d’un viewer 3D ainsi que sur différentes fonctionnalités du site. Collaboration dans un environnement de projet réel.
       </>
     ),
     icon: <FaWork />,
