@@ -55,7 +55,7 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group p-8 bg-light-card dark:bg-dark-card rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all hover:shadow-2xl hover:border-primary-500/50 hover:-translate-y-2 flex flex-col justify-between"
+              className="group p-8 bg-light-card dark:bg-dark-card rounded-3xl border border-slate-200 dark:border-white/10 shadow-sm transition-all hover:shadow-2xl hover:border-primary-500/50 hover:-translate-y-2 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="flex justify-between items-start">

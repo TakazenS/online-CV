@@ -1,14 +1,16 @@
-import { FaCode, FaLanguage, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiVite } from 'react-icons/si';
+import { FaCode, FaLanguage, FaReact, FaJs, FaDatabase, FaLaravel, FaBrain, FaGitAlt } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
 
 const skills = [
   { name: 'React', icon: <FaReact className="text-blue-400" /> },
   { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
-  { name: 'Tailwind', icon: <SiTailwindcss className="text-cyan-400" /> },
-  { name: 'Vite', icon: <SiVite className="text-purple-400" /> },
-  { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
-  { name: 'HTML/CSS', icon: <div className="flex gap-1"><FaHtml5 className="text-orange-500"/><FaCss3Alt className="text-blue-500"/></div> },
+  { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
+  { name: 'Git', icon: <FaGitAlt className="text-orange-600" /> },
+  { name: 'SQL', icon: <FaDatabase className="text-slate-400" /> },
+  { name: 'Laravel', icon: <FaLaravel className="text-red-500" /> },
 ];
+
+const softSkills = ["Autonomie", "Adaptabilité", "Esprit d’analyse", "Communication", "Esprit d’équipe"];
 
 export const Skills = () => {
   return (
@@ -28,9 +30,9 @@ export const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
+              className="group p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all duration-500 hover:shadow-md hover:scale-105 active:scale-[0.98]"
             >
-              <div className="text-4xl mb-4 group-hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-500 origin-left">
                 {skill.icon}
               </div>
               <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-2">{skill.name}</h3>
@@ -39,6 +41,22 @@ export const Skills = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="space-y-8 px-4 md:px-0">
+          <h3 className="text-2xl font-bold text-light-text dark:text-dark-text flex items-center gap-3">
+            <FaBrain className="text-primary-500" /> Soft-skills
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {softSkills.map((soft) => (
+              <div
+                key={soft}
+                className="px-6 py-3 bg-light-card dark:bg-dark-card rounded-xl border border-slate-200 dark:border-white/10 text-light-text dark:text-dark-text font-semibold shadow-sm hover:border-primary-500/50 hover:scale-105 active:scale-[0.98] transition-all duration-500 hover:shadow-md cursor-default"
+              >
+                {soft}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="space-y-8 px-4 md:px-0">

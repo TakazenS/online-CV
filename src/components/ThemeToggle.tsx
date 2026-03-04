@@ -29,7 +29,7 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative p-3 rounded-2xl bg-slate-100 dark:bg-dark-card text-primary-600 dark:text-primary-400 overflow-hidden shadow-inner border border-slate-200 dark:border-slate-800 transition-transform active:scale-95 group"
+      className="relative p-3 rounded-2xl bg-slate-100 dark:bg-dark-card text-primary-600 dark:text-primary-400 overflow-hidden shadow-inner border border-white dark:border-white/20 transition-transform active:scale-95 group"
       aria-label="Toggle theme"
     >
       <div className="relative w-6 h-6 flex items-center justify-center">

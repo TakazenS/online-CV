@@ -35,7 +35,7 @@ export const Navbar = () => {
         {/* Title - Occupies space on the left */}
         <div className="w-1/4 md:w-1/5">
           <a href="#" className="text-primary-500 font-black text-xl md:text-2xl tracking-tighter whitespace-nowrap">
-            My Portfolio
+            Mon Portfolio
           </a>
         </div>
         
