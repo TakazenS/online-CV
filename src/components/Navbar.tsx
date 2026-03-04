@@ -12,7 +12,7 @@ const navItems = [
   { name: 'Qui suis-je ?', href: '#hero', icon: <FaUser size={14} /> },
   { name: 'Compétences', href: '#skills', icon: <FaCode size={14} /> },
   { name: 'Parcours', href: '#experience', icon: <FaHistory size={14} /> },
-  { name: 'Projet', href: '#projects', icon: <FaRocket size={14} /> },
+  { name: 'Projets', href: '#projects', icon: <FaRocket size={14} /> },
 ];
 
 export const Navbar = () => {

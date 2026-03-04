@@ -6,9 +6,7 @@ const experiences = [
     title: 'CDD 1 mois - Archiviste',
     company: 'Cabinet Villard et Woinet, Renage',
     date: 'Juillet 2022',
-    description: "Classement des archives du cabinet d'expert-comptable,\n" +
-        "relation avec le personnel des différents services,\n" +
-        "travail en autonomie dans le respect des consignes.",
+    description: "Classement des archives du cabinet d'expert-comptable, relation avec le personnel des différents services, travail en autonomie dans le respect des consignes.",
     icon: <FaWork />,
     type: 'work'
   },
@@ -16,7 +14,7 @@ const experiences = [
     title: 'Mannequinat',
     company: 'Success Models, Paris',
     date: `Aout 2022 - ${new Date().getFullYear()}`,
-    description: 'Mon relationnel est apprécié par les membres de mon agence de mannequinat\n' + 'et les directeurs de casting.',
+    description: 'Mon relationnel est apprécié par les membres de mon agence de mannequinat et les directeurs de casting.',
     icon: <FaWork />,
     type: 'work'
   },
@@ -24,7 +22,7 @@ const experiences = [
     title: 'Bac STI2D option ITEC',
     company: 'Lycée LPO Ferdinant Buisson, Voiron',
     date: 'Septembre 2023 - Juin 2024',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Formation axée sur la conception et la modélisation de produits techniques. Acquisition de compétences en analyse de systèmes, modélisation 3D et démarche de projet.',
     icon: <FaGrad />,
     type: 'edu'
   },
@@ -32,7 +30,7 @@ const experiences = [
     title: 'BTS SIO option SLAM',
     company: 'Lycée Algoud Laffemas, Valence',
     date: 'Septembre 2024 - Juin 2026',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Formation orientée développement d’applications et programmation. Acquisition de compétences en conception de bases de données, développement web et logiciel, ainsi qu’en gestion de projets informatiques.',
     icon: <FaGrad />,
     type: 'edu'
   },
@@ -40,10 +38,7 @@ const experiences = [
     title: 'Stage de 1ère année',
     company: 'Widip Cloud, Seyssinet-Pariset',
     date: 'Mai 2025 - Juin 2025',
-    description: 'Stage de 5 semaines en entreprise dans le cadre de ma\n' +
-        'formation en BTS SIO.\n' +
-        'Support technique aux demandes des clients à l’aide de\n' +
-        'l’outil GLPI.',
+    description: 'Stage de 5 semaines en entreprise dans le cadre de ma formation en BTS SIO. Support technique aux demandes des clients à l’aide de l’outil GLPI.',
     icon: <FaWork />,
     type: 'work'
   },
@@ -51,7 +46,11 @@ const experiences = [
     title: 'Stage de 2ème année',
     company: 'ESRF, Grenoble',
     date: 'Janvier 2026 - Février 2026',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+    description: (
+      <>
+        Participation au développement du portail web <a href="https://paleo.esrf.fr" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">Paleo</a>. Travail sur l’intégration et l’amélioration d’un viewer 3D ainsi que sur différentes fonctionnalités du site en utilisant des technologies web modernes. Collaboration dans un environnement de projet réel.
+      </>
+    ),
     icon: <FaWork />,
     type: 'work'
   }
@@ -77,7 +76,7 @@ export const Experience = () => {
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-8">
           <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text">
-            Mon <span className="text-primary-500 underline decoration-primary-200 decoration-wavy">Parcours</span>
+            Mon <span className="text-primary-500 underline decoration-primary-200 decoration">Parcours</span>
           </h2>
           
           <div className="inline-flex p-1.5 bg-slate-100 dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm gap-2">
@@ -88,7 +87,7 @@ export const Experience = () => {
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold transition-all duration-300 ${
                   activeTab === tab.id
                     ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30 scale-[1.02]'
-                    : 'text-slate-500 hover:text-light-text dark:hover:text-dark-text hover:bg-white/50 dark:hover:bg-white/5'
+                    : 'text-slate-500 hover:text-light-text dark:hover:text-dark-text hover:bg-white/100 dark:hover:bg-white/5'
                 }`}
               >
                 {tab.icon}
@@ -119,7 +118,7 @@ export const Experience = () => {
                         <p className="text-slate-500 text-sm italic">{exp.company}</p>
                       </div>
                     ) : (
-                      <div className="p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all hover:shadow-md hover:border-primary-500/30 text-left">
+                      <div className="p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all hover:shadow-md hover:border-primary-500/30 dark:hover:border-primary-500/30 text-left">
                         <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                           {exp.description}
                         </p>
@@ -152,7 +151,7 @@ export const Experience = () => {
 
                     {/* Show card on right if header is on left, OR always on mobile */}
                     {isHeaderLeft || typeof window !== 'undefined' && window.innerWidth < 768 ? (
-                      <div className="p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all hover:shadow-md hover:border-primary-500/30">
+                      <div className="p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all hover:shadow-md hover:border-primary-500/30 dark:hover:border-primary-500/30">
                         <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                           {exp.description}
                         </p>

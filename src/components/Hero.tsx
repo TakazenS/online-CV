@@ -13,7 +13,7 @@ export const Hero = () => {
             Loris Moine
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Etudiant en seconde année de BTS Services Informatiques aux Organisations (SIO) au lycée Algoud Laffemas à Valence. Je suis passionné par l'informatique depuis tout jeune et souhaite aujourd'hui mettre en pratique ce que j'ai pu apprendre au cours de ma formation.
           </p>
           <div className="pt-4">
             <a

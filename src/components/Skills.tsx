@@ -14,12 +14,12 @@ const softSkills = ["Autonomie", "Adaptabilité", "Esprit d’analyse", "Communi
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-24 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] bg-white/50 dark:bg-black/10 backdrop-blur-sm px-8 md:px-0">
+    <section id="skills" className="py-24 bg-white/50 dark:bg-black/10 backdrop-blur-sm px-8 md:px-0">
       <div className="max-w-4xl mx-auto space-y-16">
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text flex items-center justify-center gap-4">
-            <FaCode className="text-primary-500" />
-            Compétences <span className="text-primary-500">&</span> langues
+            <FaCode />
+            <span className="text-primary-500 underline decoration-primary-200 decoration">Compétences</span> & <span className="text-primary-500 underline decoration-primary-200 decoration">langues</span>
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto italic px-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,7 +30,7 @@ export const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 shadow-sm transition-all duration-500 hover:shadow-md hover:scale-105 active:scale-[0.98]"
+              className="group p-6 bg-light-card dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-white/10 hover:border-primary-500/50 dark:hover:border-primary-500/50 shadow-sm transition-all duration-500 hover:shadow-md hover:scale-105 active:scale-[0.98]"
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-500 origin-left">
                 {skill.icon}
@@ -51,7 +51,7 @@ export const Skills = () => {
             {softSkills.map((soft) => (
               <div
                 key={soft}
-                className="px-6 py-3 bg-light-card dark:bg-dark-card rounded-xl border border-slate-200 dark:border-white/10 text-light-text dark:text-dark-text font-semibold shadow-sm hover:border-primary-500/50 hover:scale-105 active:scale-[0.98] transition-all duration-500 hover:shadow-md cursor-default"
+                className="px-6 py-3 bg-light-card dark:bg-dark-card rounded-xl border border-slate-200 dark:border-white/10 text-light-text dark:text-dark-text font-semibold shadow-sm hover:border-primary-500/50 dark:hover:border-primary-500/50 hover:scale-105 active:scale-[0.98] transition-all duration-500 hover:shadow-md cursor-default"
               >
                 {soft}
               </div>

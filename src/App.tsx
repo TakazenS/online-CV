@@ -11,7 +11,7 @@ function App() {
     <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300 relative overflow-x-hidden">
       <CursorGlow />
       <Navbar />
-      <main className="max-w-6xl mx-auto relative z-10">
+      <main className="relative z-10">
         <Hero />
         <Skills />
         <Experience />
