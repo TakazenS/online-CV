@@ -18,7 +18,7 @@ function App() {
         <Projects />
       </main>
 
-      <footer className="py-12 text-center border-t border-slate-200 dark:border-white/10 mt-24">
+      <footer className="py-12 text-center border-t border-slate-200 dark:border-white/10">
         <p className="text-slate-500 font-medium flex items-center justify-center gap-2">
           © Loris Moine {new Date().getFullYear()} — Mon Portfolio —
           <a 

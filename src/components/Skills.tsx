@@ -1,11 +1,11 @@
-import { FaCode, FaLanguage, FaReact, FaJs, FaDatabase, FaLaravel, FaBrain, FaGitAlt } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
+import { FaCode, FaLanguage, FaDatabase, FaLaravel, FaBrain } from 'react-icons/fa';
+import { BiLogoReact, BiLogoTypescript, BiLogoJavascript, BiLogoGit } from 'react-icons/bi';
 
 const skills = [
-  { name: 'React', icon: <FaReact className="text-blue-400" /> },
-  { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
-  { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
-  { name: 'Git', icon: <FaGitAlt className="text-orange-600" /> },
+  { name: 'React', icon: <BiLogoReact className="text-blue-400" size={40} /> },
+  { name: 'TypeScript', icon: <BiLogoTypescript className="text-blue-600" size={40} /> },
+  { name: 'JavaScript', icon: <BiLogoJavascript className="text-yellow-400" size={40} /> },
+  { name: 'Git', icon: <BiLogoGit className="text-orange-600" size={40} /> },
   { name: 'SQL', icon: <FaDatabase className="text-slate-400" /> },
   { name: 'Laravel', icon: <FaLaravel className="text-red-500" /> },
 ];
@@ -19,7 +19,7 @@ export const Skills = () => {
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text flex items-center justify-center gap-4">
             <FaCode />
-            <span className="text-primary-500 underline decoration-primary-200 decoration">Compétences</span> & <span className="text-primary-500 underline decoration-primary-200 decoration">langues</span>
+            Mes <span className="text-primary-500 underline decoration-primary-200 decoration">Compétences</span>
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto italic px-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,7 +79,7 @@ export const Skills = () => {
                 <span className="text-primary-500">LV2</span>
               </div>
               <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-primary-500 rounded-full w-[65%] shadow-[0_0_15px_rgba(249,115,22,0.3)]" />
+                <div className="h-full bg-primary-500 rounded-full w-[60%] shadow-[0_0_15px_rgba(249,115,22,0.3)]" />
               </div>
             </div>
           </div>

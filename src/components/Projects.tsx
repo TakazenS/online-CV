@@ -1,4 +1,4 @@
-import { FaGithub, FaGitlab, FaExternalLinkAlt } from 'react-icons/fa';
+import {FaGithub, FaGitlab, FaExternalLinkAlt, FaRocket} from 'react-icons/fa';
 
 const projects = [
   {
@@ -35,7 +35,8 @@ export const Projects = () => {
       <div className="max-w-4xl mx-auto space-y-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text">
+            <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text flex items-center justify-start gap-4">
+              <FaRocket size={42}/>
               Mes <span className="text-primary-500 underline decoration-primary-200">Projets</span>
             </h2>
             <p className="text-slate-500 max-w-lg italic">
@@ -46,7 +47,7 @@ export const Projects = () => {
             href="https://github.com/TakazenS"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-xl text-slate-900 dark:text-slate-100 hover:text-primary-500 hover:bg-primary-500/10 hover:underline decoration-primary-500/30 underline-offset-4 font-bold transition-all transform hover:scale-105"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl text-slate-900 dark:text-slate-100 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-primary-500/10 hover:underline decoration-primary-500/30 underline-offset-4 font-bold transition-all transform hover:scale-105"
           >
             <FaGithub size={24} />
             <span>Tout voir sur GitHub</span>

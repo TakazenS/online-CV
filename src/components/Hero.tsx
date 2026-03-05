@@ -25,9 +25,9 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative group">
-          <div className="absolute -inset-4 bg-primary-500/20 rounded-3xl blur-2xl transition-all group-hover:bg-primary-500/30" />
-          <div className="relative w-64 h-64 md:w-80 md:h-80 bg-slate-200 dark:bg-dark-card rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center border-4 border-white dark:border-white/10 transition-transform group-hover:scale-105">
-            <img className="rounded-full h-64 w-auto" src="/pp.png" alt="ProfilePicture"/>
+          <div className="absolute -inset-4 bg-primary-500/20 rounded-full blur-2xl transition-all group-hover:bg-primary-500/30" />
+          <div className="relative w-58 h-58 md:w-72 md:h-72 bg-slate-200 dark:bg-dark-card rounded-full overflow-hidden shadow-2xl flex items-center justify-center border-4 border-white dark:border-white/10 transition-transform group-hover:scale-105">
+            <img className="rounded-full h-58 w-auto" src="/pp.png" alt="ProfilePicture"/>
           </div>
         </div>
       </div>

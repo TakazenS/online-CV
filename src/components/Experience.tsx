@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaGraduationCap as FaGrad, FaBriefcase as FaWork, FaLayerGroup as FaMix } from 'react-icons/fa';
+import { FaGraduationCap as FaGrad, FaBriefcase as FaWork, FaLayerGroup as FaMix, FaHistory } from 'react-icons/fa';
 
 const experiences = [
   {
@@ -66,16 +66,17 @@ export const Experience = () => {
   );
 
   const tabs = [
+    { id: 'all', label: 'Mixte', icon: <FaMix className="text-sm" /> },
     { id: 'work', label: 'Professionnel', icon: <FaWork className="text-sm" /> },
     { id: 'edu', label: 'Scolaire', icon: <FaGrad className="text-sm" /> },
-    { id: 'all', label: 'Mixte', icon: <FaMix className="text-sm" /> },
   ];
 
   return (
     <section id="experience" className="py-24 px-8 md:px-0">
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text">
+          <h2 className="text-3xl md:text-5xl font-black text-light-text dark:text-dark-text flex items-center justify-center gap-4">
+            <FaHistory size={42} />
             Mon <span className="text-primary-500 underline decoration-primary-200 decoration">Parcours</span>
           </h2>
           
