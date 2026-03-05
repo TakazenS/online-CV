@@ -22,7 +22,7 @@ export const Skills = () => {
             Mes <span className="text-primary-500 underline decoration-primary-200 decoration">Compétences</span>
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto italic px-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Compétences acquises au cours de ma formation ainsi que mes différentes experiences professionelles.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export const Skills = () => {
               </div>
               <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-2">{skill.name}</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.A
               </p>
             </div>
           ))}
