@@ -1,16 +1,24 @@
 import { FaCode, FaLanguage, FaDatabase, FaLaravel, FaBrain } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTypescript, BiLogoJavascript, BiLogoGit } from 'react-icons/bi';
 
-const skills = [
-  { name: 'React', icon: <BiLogoReact className="text-blue-400" size={40} /> },
-  { name: 'TypeScript', icon: <BiLogoTypescript className="text-blue-600" size={40} /> },
-  { name: 'JavaScript', icon: <BiLogoJavascript className="text-yellow-400" size={40} /> },
-  { name: 'Git', icon: <BiLogoGit className="text-orange-600" size={40} /> },
-  { name: 'SQL', icon: <FaDatabase className="text-slate-400" /> },
-  { name: 'Laravel', icon: <FaLaravel className="text-red-500" /> },
-];
+import skillsData from '../data/skills.json';
+import { type JSX } from "react";
 
-const softSkills = ["Autonomie", "Adaptabilité", "Esprit d’analyse", "Communication", "Esprit d’équipe"];
+const skillIcons: Record<string, JSX.Element> = {
+  BiLogoReact: <BiLogoReact className="text-blue-400" size={40} />,
+  BiLogoTypescript: <BiLogoTypescript className="text-blue-600" size={40} />,
+  BiLogoJavascript: <BiLogoJavascript className="text-yellow-400" size={40} />,
+  BiLogoGit: <BiLogoGit className="text-orange-600" size={40} />,
+  FaDatabase: <FaDatabase className="text-slate-400" />,
+  FaLaravel: <FaLaravel className="text-red-500" />,
+};
+
+const skills = skillsData.skills.map(skill => ({
+  ...skill,
+  icon: skillIcons[skill.icon as keyof typeof skillIcons]
+}));
+
+const softSkills = skillsData.softSkills;
 
 export const Skills = () => {
   return (

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "CDD 1 mois - Archiviste",
+    "company": "Cabinet Villard et Woinet, Renage",
+    "date": "Juillet 2022",
+    "description": "Classement des archives du cabinet d'expert-comptable, relation avec le personnel des différents services, travail en autonomie dans le respect des consignes.",
+    "icon": "FaWork",
+    "type": "work"
+  },
+  {
+    "title": "Mannequinat",
+    "company": "Success Models, Paris",
+    "date": "Aout 2022 - NOWDATE",
+    "description": "Mon relationnel est apprécié par les membres de mon agence de mannequinat et les directeurs de casting.",
+    "icon": "FaWork",
+    "type": "work"
+  },
+  {
+    "title": "Bac STI2D option ITEC",
+    "company": "Lycée LPO Ferdinant Buisson, Voiron",
+    "date": "Septembre 2023 - Juin 2024",
+    "description": "Formation axée sur la conception et la modélisation de produits techniques. Acquisition de compétences en analyse de systèmes, modélisation 3D et démarche de projet.",
+    "icon": "FaGrad",
+    "type": "edu"
+  },
+  {
+    "title": "BTS SIO option SLAM",
+    "company": "Lycée Algoud Laffemas, Valence",
+    "date": "Septembre 2024 - Juin 2026",
+    "description": "Formation orientée développement d’applications et programmation. Acquisition de compétences en conception de bases de données, développement web et logiciel, ainsi qu’en gestion de projets informatiques.",
+    "icon": "FaGrad",
+    "type": "edu"
+  },
+  {
+    "title": "Stage de 1ère année",
+    "company": "Widip Cloud, Seyssinet-Pariset",
+    "date": "Mai 2025 - Juin 2025",
+    "description": "Stage de 5 semaines en entreprise dans le cadre de ma formation en BTS SIO. Support technique aux demandes des clients à l’aide de l’outil GLPI.",
+    "icon": "FaWork",
+    "type": "work"
+  },
+  {
+    "title": "Stage de 2ème année",
+    "company": "ESRF, Grenoble",
+    "date": "Janvier 2026 - Février 2026",
+    "description": "Stage de 6 semaines en entreprise. Participation au développement du portail web <a href=\"https://paleo.esrf.fr\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary-500 hover:underline\">Paleo</a>. Travail sur l’intégration et l’amélioration d’un viewer 3D ainsi que sur différentes fonctionnalités du site. Collaboration dans un environnement de projet réel.",
+    "icon": "FaWork",
+    "type": "work"
+  }
+]

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { type JSX, useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 import { FaUser, FaCode, FaHistory, FaRocket, FaBars, FaTimes } from 'react-icons/fa';
 import { clsx, type ClassValue } from 'clsx';
@@ -8,12 +8,19 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const navItems = [
-  { name: 'Qui suis-je ?', href: '#hero', icon: <FaUser size={14} /> },
-  { name: 'Compétences', href: '#skills', icon: <FaCode size={14} /> },
-  { name: 'Parcours', href: '#experience', icon: <FaHistory size={14} /> },
-  { name: 'Projets', href: '#projects', icon: <FaRocket size={14} /> },
-];
+import navItemsData from '../data/navItems.json';
+
+const navIcons: Record<string, JSX.Element> = {
+  FaUser: <FaUser size={14} />,
+  FaCode: <FaCode size={14} />,
+  FaHistory: <FaHistory size={14} />,
+  FaRocket: <FaRocket size={14} />,
+};
+
+const navItems = navItemsData.map(item => ({
+  ...item,
+  icon: navIcons[item.icon as keyof typeof navIcons]
+}));
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

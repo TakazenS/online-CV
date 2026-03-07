@@ -1,0 +1,6 @@
+[
+  { "name": "Qui suis-je ?", "href": "#hero", "icon": "FaUser" },
+  { "name": "Compétences", "href": "#skills", "icon": "FaCode" },
+  { "name": "Parcours", "href": "#experience", "icon": "FaHistory" },
+  { "name": "Projets", "href": "#projects", "icon": "FaRocket" }
+]
