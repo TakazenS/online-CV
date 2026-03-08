@@ -42,39 +42,39 @@ export const Navbar = () => {
       )}>
         <div className="max-w-6xl mx-auto flex items-center justify-between relative">
           {/* Burger Menu Button - Left on mobile */}
-          <div className="md:hidden w-1/4">
+          <div className="flex md:hidden w-1/4">
             <button 
               onClick={() => setIsMenuOpen(true)}
               className="p-2 text-light-text dark:text-dark-text hover:text-primary-500 transition-colors"
               aria-label="Ouvrir le menu"
             >
-              <FaBars size={28} />
+              <FaBars className="w-6 h-6 md:w-7 md:h-7" />
             </button>
           </div>
 
           {/* Title - Centered on mobile, left on desktop */}
-          <div className="flex-1 md:flex-initial text-center md:text-left md:w-1/5">
+          <div className="flex-1 md:flex-initial text-center md:text-left md:w-auto lg:w-1/5">
             <a href="#" className="text-primary-500 font-black text-xl md:text-2xl tracking-tighter whitespace-nowrap">
               Mon Portfolio
             </a>
           </div>
           
           {/* Centered Nav Links - Desktop only */}
-          <div className="hidden md:flex flex-1 justify-center items-center gap-1 lg:gap-8">
+          <div className="hidden md:flex flex-1 justify-center items-center gap-2 lg:gap-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 rounded-xl text-light-text dark:text-dark-text hover:bg-primary-500/10 hover:text-primary-500 dark:hover:text-primary-400 transition-all font-semibold flex items-center gap-2 group"
+                className="px-3 lg:px-4 py-2 rounded-xl text-light-text dark:text-dark-text hover:bg-primary-500/10 hover:text-primary-500 dark:hover:text-primary-400 transition-all font-semibold flex items-center gap-2 group"
               >
-                <span className="group-hover:scale-110 transition-transform">{item.icon}</span>
-                <span className="text-sm tracking-wide">{item.name}</span>
+                <span className="group-hover:scale-110 transition-transform shrink-0">{item.icon}</span>
+                <span className="text-sm tracking-wide whitespace-nowrap">{item.name}</span>
               </a>
             ))}
           </div>
 
           {/* Theme Toggle - Right on both mobile and desktop */}
-          <div className="w-1/4 md:w-1/5 flex justify-end">
+          <div className="w-1/4 md:w-auto lg:w-1/5 flex justify-end">
             <ThemeToggle />
           </div>
         </div>
@@ -102,7 +102,7 @@ export const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
               className="p-2 text-light-text dark:text-dark-text hover:text-primary-500 transition-colors"
             >
-              <FaTimes size={24} />
+              <FaTimes className="w-5 h-5 md:w-6 md:h-6" />
             </button>
           </div>
           

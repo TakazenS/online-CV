@@ -29,10 +29,10 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative p-3 rounded-2xl bg-slate-100 dark:bg-dark-card text-primary-600 dark:text-primary-400 overflow-hidden shadow-inner border border-white dark:border-white/20 transition-transform active:scale-95 group"
+      className="relative p-2 md:p-3 rounded-2xl bg-slate-100 dark:bg-dark-card text-primary-600 dark:text-primary-400 overflow-hidden shadow-inner border border-white dark:border-white/20 transition-transform active:scale-95 group"
       aria-label="Toggle theme"
     >
-      <div className="relative w-6 h-6 flex items-center justify-center">
+      <div className="relative w-5 h-5 md:w-6 md:h-6 flex items-center justify-center">
         <AnimatePresence mode="popLayout" initial={false}>
           {theme === 'light' ? (
             <motion.div
@@ -43,7 +43,7 @@ export const ThemeToggle = () => {
               transition={{ duration: 0.25, ease: 'easeOut' }}
               className="absolute"
             >
-              <FaSun size={20} className="group-hover:rotate-45 transition-transform duration-500" />
+              <FaSun className="w-4 h-4 md:w-5 md:h-5 group-hover:rotate-45 transition-transform duration-500" />
             </motion.div>
           ) : (
             <motion.div
@@ -54,7 +54,7 @@ export const ThemeToggle = () => {
               transition={{ duration: 0.25, ease: 'easeOut' }}
               className="absolute"
             >
-              <FaMoon size={20} className="group-hover:-rotate-12 transition-transform duration-500" />
+              <FaMoon className="w-4 h-4 md:w-5 md:h-5 group-hover:-rotate-12 transition-transform duration-500" />
             </motion.div>
           )}
         </AnimatePresence>
