@@ -45,7 +45,7 @@ export const Skills = () => {
               </div>
               <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-2">{skill.name}</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.A
+                {skill.abstract}
               </p>
             </div>
           ))}

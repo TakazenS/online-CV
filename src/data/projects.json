@@ -1,27 +1,27 @@
 [
   {
     "name": "Instalock Roulette",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Roulette aléatoire pour les jeux Valorant et League of Legends, qui m’a permis d’explorer différents aspects, à la fois du côté de l’interface et de la logique code. Découverte de la bibliothèque react motion",
     "github": "https://github.com/TakazenS/instalock-roulette",
     "demoUrl": "https://instalock-roulette.com",
     "tags": ["React", "TypeScript", "Vite"]
   },
   {
     "name": "Domain Portals",
-    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Projet réalisé lors de mon second stage en BTS SIO, travail sur le développement et l'intégration d'un viewer 3D pour le portail web Paleo. Découverte totale des outils comme Three.js et React Three Fiber (R3F).",
     "github": "https://gitlab.esrf.fr/ui/domain-portals",
     "demoUrl": "https://paleo.esrf.fr",
     "tags": ["React", "TypeScript", "Vite"]
   },
   {
     "name": "Aut'Occasion",
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "description": "Site fictif de vente de voitures d’occasion entre particuliers. Premier projet en collaboration, réalisé durant ma formation dans le cadre des cours d’atelier professionnels. Découverte de Git et de nombreux outils back-end",
     "github": "https://github.com/TakazenS/AutoOcasion",
     "tags": ["PHP", "JavaScript", "Node.js", "Express"]
   },
   {
     "name": "VEM",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Plateforme front office / back office fictive pour l’entreprise VEM. Projet réalisé dans le cadre de mes cours d’atelier professionnels. Découverte du framework Laravel et de ses différents outils comme Breeze.",
     "github": "https://github.com/TakazenS/VEM-Web",
     "tags": ["Laravel", "Tailwind", "Vite"]
   }

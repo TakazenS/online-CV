@@ -15,7 +15,7 @@ export const Projects = () => {
               Mes <span className="text-primary-500 underline decoration-primary-200">Projets</span>
             </h2>
             <p className="text-slate-500 max-w-lg italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Projets réalisés au cours des deux dernières années, à la fois dans un cadre scolaire et personnel. Ces projets mon beaucoup aidé à apprendre.
             </p>
           </div>
           <a
