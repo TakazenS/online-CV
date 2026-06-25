@@ -1,16 +1,22 @@
 [
   {
-    "name": "Instalock Roulette",
-    "description": "Roulette aléatoire pour les jeux Valorant et League of Legends, qui m’a permis d’explorer différents aspects, à la fois du côté de l’interface et de la logique code. Découverte de la bibliothèque react motion",
-    "github": "https://github.com/TakazenS/instalock-roulette",
-    "demoUrl": "https://instalock-roulette.com",
-    "tags": ["React", "TypeScript", "Vite"]
+    "name": "GTA 6 Tracker",
+    "description": "Surveille la page de recherche de la Fnac et vous envoie un e-mail dès que le jeu\nGrand Theft Auto VI apparaît dans les résultats de recherche.",
+    "github": "https://github.com/TakazenS/GT6-Fnac-Tracker",
+    "tags": ["Python", "CMD", "Claude Code"]
   },
   {
     "name": "Domain Portals",
     "description": "Projet réalisé lors de mon second stage en BTS SIO, travail sur le développement et l'intégration d'un viewer 3D pour le portail web Paleo. Découverte totale des outils comme Three.js et React Three Fiber (R3F).",
     "github": "https://gitlab.esrf.fr/ui/domain-portals",
     "demoUrl": "https://paleo.esrf.fr",
+    "tags": ["React", "TypeScript", "Vite"]
+  },
+  {
+    "name": "Instalock Roulette",
+    "description": "Roulette aléatoire pour les jeux Valorant et League of Legends, qui m’a permis d’explorer différents aspects, à la fois du côté de l’interface et de la logique code. Découverte de la bibliothèque react motion",
+    "github": "https://github.com/TakazenS/instalock-roulette",
+    "demoUrl": "https://instalock-roulette.com",
     "tags": ["React", "TypeScript", "Vite"]
   },
   {
